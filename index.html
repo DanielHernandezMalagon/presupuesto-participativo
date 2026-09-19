@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presupuesto</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <i class="fa-solid fa-map-location-dot"></i> Prepar
+    </div>
+    <nav>
+      <a href="#quienes-somos">Quiénes Somos</a>
+      <a href="#planeacion">Planeación</a>
+      <a href="#producto">Producto</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>El poder de decidir el futuro de tu comunidad</h1>
+    <p>Impulsando el seguimiento del Presupuesto Participativo en la Ciudad de México.</p>
+    <a href="#producto" class="btn">Conocer más</a>
+  </section>
+
+  <section id="quienes-somos">
+    <h2 class="title">¿Quiénes Somos?</h2>
+    <div class="card">
+      <p>Somos un equipo de estudiantes comprometidos con el desarrollo tecnológico de impacto social. A través de este Proyecto Aula, buscamos facilitar la rendición de cuentas y la contraloría social, permitiendo que los ciudadanos de las alcaldías de la CDMX consulten de forma transparente las obras públicas de su comunidad.</p>
+    </div>
+  </section>
+
+  <section id="planeacion">
+    <h2 class="title">Planeación Estratégica</h2>
+    <div class="grid-container">
+      <div class="card">
+        <h3><i class="fa-solid fa-bullseye"></i> Misión</h3>
+        <p>Democratizar la información pública mediante herramientas digitales abiertas e interactivas que fortalezcan la participación ciudadana.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-eye"></i> Visión</h3>
+        <p>Ser la plataforma de referencia para el seguimiento comunitario de recursos públicos y obras del Presupuesto Participativo.</p>
+      </div>
+      <div class="card">
+        <h3><i class="fa-solid fa-flag"></i> Objetivo General</h3>
+        <p>Desarrollar una solución multiplataforma (Web y Android) para consultar, geolocalizar y reportar el estado de los proyectos vecinales.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="producto">
+  <h2 class="title">Nuestro Producto y Servicio</h2>
+  <div class="grid-container">
+    <div class="card">
+      <h3><i class="fa-solid fa-mobile-screen"></i> Plataforma Prepar</h3>
+      <p>Un sistema integrado para dar seguimiento transparente a las obras y recursos de la Alcaldía:</p>
+      <ul style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 1.5rem;">
+        <li><strong>Mapa Interactivo:</strong> Ubicación geográfica de proyectos.</li>
+        <li><strong>Foro Vecinal:</strong> Propuestas y debates de la comunidad.</li>
+        <li><strong>Fotodenuncia:</strong> Reporte con evidencia del avance de obras.</li>
+      </ul>
+      <a href="https://github.com/DanielHernandezMalagon/presupuesto-participativo" target="_blank" class="btn">
+        <i class="fa-solid fa-rocket"></i> Probar Producto / Ver Repositorio
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contacto">
+    <h2 class="title">Contacto y Equipo</h2>
+    <div class="grid-container">
+      <div class="card">
+        <h3>Integrantes del Proyecto</h3>
+        <ul style="list-style: none; padding: 0; line-height: 2;">
+          <li><i class="fa-solid fa-user"></i> <strong>Daniel Hernández Malagón</strong> (Líder)</li>
+        
+          <li><i class="fa-solid fa-user"></i> <strong>De la Cruz Escalante Daniel</strong> (Desarrollador)</li>
+          <li><i class="fa-solid fa-user"></i> <strong>Leonar Serrano Johan Joshua</strong> (Analista)</li>
+          <li><i class="fa-solid fa-user"></i> <strong>Serrano Jimenez Jostin Kiroshi</strong> (Diseñador)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Escríbenos</h3>
+        <form onsubmit="alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.'); this.reset(); return false;">
+            <input type="text" placeholder="Tu Nombre" class="input-field" required>
+            <input type="email" placeholder="Tu Correo" class="input-field" required>
+            <textarea placeholder="Tu Mensaje" class="input-field" rows="4" required></textarea>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Proyecto Aula &copy; 2026 - Prepar</p>
+  </footer>
+
+</body>
+</html>
