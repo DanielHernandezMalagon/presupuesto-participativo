@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 :root {
-  --primary: #5C6B73;      
-  --accent: #D67B5A;        
-  --bg: #E0E0E0;            
-  --dark: #333333;         
+  --primary: #5C6B73;       /* Primary Slate */
+  --accent: #D67B5A;        /* Terracotta Accent */
+  --bg: #E0E0E0;            /* Light Gray */
+  --dark: #333333;          /* Dark Charcoal Text */
   --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
@@ -21,67 +25,73 @@ body {
   line-height: 1.6;
 }
 
+/* Header estilizado con enlaces legibles */
 header {
   background-color: var(--primary);
   color: var(--white);
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 header .logo {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 nav a {
   color: var(--white);
   text-decoration: none;
-  margin-left: 1.2rem;
-  transition: color 0.3s;
+  margin-left: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: var(--accent);
 }
 
+/* Hero a pantalla completa */
 .hero {
   width: 100%;
   background: linear-gradient(rgba(92, 107, 115, 0.85), rgba(51, 51, 51, 0.85)), 
               url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
   color: var(--white);
   text-align: center;
-  padding: 6rem 1rem;
-  box-sizing: border-box;
+  padding: 7rem 1.5rem;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.8rem;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   max-width: 700px;
-  margin: 0 auto 1.5rem auto;
+  margin: 0 auto 1.8rem auto;
   opacity: 0.95;
 }
 
+/* Contenedor general */
 section {
-  padding: 3rem 1.5rem;
-  max-width: 1000px;
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .title {
   text-align: center;
   color: var(--primary);
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -93,24 +103,25 @@ section {
 
 .card {
   background: var(--white);
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  flex: 1 1 280px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  flex: 1 1 300px;
   text-align: justify;
 }
 
 .card h3 {
   color: var(--primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .btn {
   display: inline-block;
   background-color: var(--accent);
   color: var(--white);
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   border: none;
@@ -125,7 +136,7 @@ section {
 
 .input-field {
   width: 100%;
-  padding: 0.6rem;
+  padding: 0.75rem;
   margin-bottom: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -135,6 +146,6 @@ footer {
   background-color: var(--dark);
   color: var(--white);
   text-align: center;
-  padding: 1.5rem;
-  margin-top: 2rem;
+  padding: 2rem;
+  margin-top: 3rem;
 }
